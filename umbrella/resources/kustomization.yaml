@@ -1,0 +1,6 @@
+namespace: bigbang
+
+resources:
+# - gitrepos/
+# - secrets/
+- configs/
