@@ -1,3 +1,5 @@
+namespace: bigbang
+
 resources:
 # - resources/gitrepos/
 # - resources/secrets/
