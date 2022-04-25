@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: istio-config
+  namespace: bigbang
+data:
+  values.yaml: |
+    istio:
+      enabled: true
+
