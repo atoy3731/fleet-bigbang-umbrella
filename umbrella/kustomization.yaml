@@ -1,4 +1,4 @@
 resources:
-- resources/gitrepos/
-- resources/secrets/
+# - resources/gitrepos/
+# - resources/secrets/
 - resources/configs/
