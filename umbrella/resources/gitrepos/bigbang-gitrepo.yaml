@@ -2,16 +2,11 @@ apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
   name: bigbang
-  namespace: fleet-local
+  namespace: fleet-default
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
   clientSecretName: private-key
   targets:
-  - clusterSelector:
-      matchExpressions:
-      - key: provider.cattle.io
-        operator: NotIn
-        values:
-        - harvester
+  - 
   paths:
   - ./chart/
