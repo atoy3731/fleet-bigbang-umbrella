@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: common-config
-  namespace: bigbang
+  namespace: fleet-default
 data:
   values.yaml: |-
     domain: atoy.lol

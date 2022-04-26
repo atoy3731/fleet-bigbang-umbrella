@@ -9,11 +9,11 @@ helm:
   # ConfigMaps
   - configMapKeyRef:
       name: common-config
-      namespace: bigbang
+      namespace: fleet-default
       key: values.yaml
   - configMapKeyRef:
       name: istio-config
-      namespace: bigbang
+      namespace: fleet-default
       key: values.yaml
   # Secrets
   # - secretKeyRef:
