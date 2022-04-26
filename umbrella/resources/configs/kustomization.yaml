@@ -1,3 +1,0 @@
-resources:
-- istio-config.yaml
-- common-config.yaml
