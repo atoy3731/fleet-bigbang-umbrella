@@ -64,3 +64,15 @@ diff:
     name: istio-system
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
+  - apiVersion: v1
+    kind: Secret
+    name: private-registry
+    namespace: istio-system
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+  - apiVersion: v1
+    kind: Secret
+    name: private-registry
+    namespace: istio-operator
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
