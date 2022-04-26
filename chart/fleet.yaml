@@ -8,6 +8,10 @@ helm:
   valuesFrom:
   # ConfigMaps
   - configMapKeyRef:
+      name: common-config
+      namespace: bigbang
+      key: values.yaml
+  - configMapKeyRef:
       name: istio-config
       namespace: bigbang
       key: values.yaml

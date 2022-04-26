@@ -1,8 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: istio-config
+  name: common-config
   namespace: bigbang
 data:
-  values.yaml: |
+  values.yaml: |-
     domain: atoy.lol
+    foo: bar
