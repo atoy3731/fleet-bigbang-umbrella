@@ -6,10 +6,10 @@ metadata:
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
   clientSecretName: private-key
-  targets:
-  - name: local
-    clusterSelector:
-      matchLabels:
-        cluster: local
+  targets: []
+  # - name: local
+  #   clusterSelector:
+  #     matchLabels:
+  #       cluster: local
   paths:
   - ./umbrella

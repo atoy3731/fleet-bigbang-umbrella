@@ -3,19 +3,11 @@ defaultNamespace: bigbang
 helm:
   chart: git::https://repo1.dso.mil/platform-one/big-bang/bigbang.git@chart?ref=v1.32.0
   releaseName: bigbang
-  valuesFiles:
-    - values.yaml
   valuesFrom:
-  # ConfigMaps
   - configMapKeyRef:
-      name: common-config
+      name: bigbang-configs
       namespace: fleet-default
       key: values.yaml
-  - configMapKeyRef:
-      name: istio-config
-      namespace: fleet-default
-      key: values.yaml
-  # Secrets
   # - secretKeyRef:
   #     name: bigbang-secrets
   #     namespace: bigbang
