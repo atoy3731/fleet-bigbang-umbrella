@@ -1,4 +1,4 @@
-namespace: fleet-default
+namespace: fleet-local
 
 resources:
   - resources/configs

@@ -2,14 +2,14 @@ apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
   name: bigbang-umbrella
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
   clientSecretName: private-key
   targets:
-  - name: test
+  - name: local
     clusterSelector:
       matchLabels:
-        cluster: test
+        cluster: local
   paths:
   - ./umbrella

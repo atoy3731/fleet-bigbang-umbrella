@@ -1,4 +1,4 @@
-defaultNamespace: bigbang
+defaultNamespace: fleet-local
 
 kustomize:
   dir: ./resources
