@@ -4,7 +4,7 @@ metadata:
   name: bigbang-configs
 data:
   values.yaml: |-
-    domain: istiocon.xyz
+    domain: adamtoy.io
 
     istio:
       enabled: true
