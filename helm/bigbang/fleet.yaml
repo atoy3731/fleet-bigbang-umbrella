@@ -40,17 +40,27 @@ diff:
       - { "op": "remove", "path": "/spec/rollback/cleanupOnFail" }
       - { "op": "remove", "path": "/spec/rollback/timeout" }
       - { "op": "remove", "path": "/spec/test/enable" }
-  - apiVersion: helm.toolkit.fluxcd.io/v1beta1
+  - apiVersion: source.toolkit.fluxcd.io/v1beta1
     kind: GitRepository
     name: istio-controlplane
     namespace: bigbang
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
       - { "op": "remove", "path": "/spec/interval" }
-  - apiVersion: helm.toolkit.fluxcd.io/v1beta1
+  - apiVersion: source.toolkit.fluxcd.io/v1beta1
     kind: GitRepository
     name: istio-operator
     namespace: bigbang
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
       - { "op": "remove", "path": "/spec/interval" }
+  - apiVersion: v1
+    kind: Namespace
+    name: istio-operator
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+  - apiVersion: v1
+    kind: Namespace
+    name: istio-system
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
