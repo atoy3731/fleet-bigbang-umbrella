@@ -12,3 +12,6 @@ helm:
   #     name: bigbang-secrets
   #     namespace: bigbang
   #     key: values.yaml
+
+dependsOn:
+  - name: flux-helm-flux-manifests
