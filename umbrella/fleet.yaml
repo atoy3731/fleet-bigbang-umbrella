@@ -1,3 +1,4 @@
 defaultNamespace: bigbang
+
 kustomize:
-  dir: "./resources/"
+  dir: ./resources
