@@ -7,9 +7,9 @@ spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
   clientSecretName: private-key
   targets:
-  - name: bigbang
+  - name: main
     clusterSelector:
       matchLabels:
-        cluster: bigbang
+        cluster: main
   paths:
   - ./umbrella
