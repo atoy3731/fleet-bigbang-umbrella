@@ -1,5 +1,5 @@
 namespace: fleet-local
 
 resources:
-  - resources/configs
+  - configs
   # - resources/gitrepos
