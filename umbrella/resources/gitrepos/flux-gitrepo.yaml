@@ -1,7 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: bigbang
+  name: flux
   namespace: fleet-default
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
@@ -12,4 +12,5 @@ spec:
       matchLabels:
         cluster: test
   paths:
-  - ./helm/bigbang/
+  - ./helm/flux/crds/
+  - ./helm/flux/chart/

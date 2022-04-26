@@ -1,0 +1,7 @@
+defaultNamespace: flux-system
+
+helm:
+  repo: https://charts.fluxcd.io
+  chart: flux
+  version: 1.11.4
+  releaseName: flux
