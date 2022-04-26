@@ -6,7 +6,7 @@ helm:
   valuesFrom:
   - configMapKeyRef:
       name: istio-config
-      namespace: fleet-default
+      namespace: bigbang
       key: values.yaml
   # - secretKeyRef:
   #     name: bigbang-secrets
