@@ -16,7 +16,7 @@ helm:
       namespace: bigbang
       key: values.yaml
   # Secrets
-  - secretKeyRef:
-      name: bigbang-secrets
-      namespace: bigbang
-      key: values.yaml
+  # - secretKeyRef:
+  #     name: bigbang-secrets
+  #     namespace: bigbang
+  #     key: values.yaml
