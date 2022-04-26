@@ -1,5 +1,4 @@
-namespace: fleet-default
+namespace: bigbang
 
 resources:
 - configs/
-- gitrepos/

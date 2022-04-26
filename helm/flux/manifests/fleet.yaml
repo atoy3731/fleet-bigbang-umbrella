@@ -1,1 +1,4 @@
 defaultNamespace: flux-system
+
+dependsOn:
+  - name: bigbang-prereqs-umbrella
