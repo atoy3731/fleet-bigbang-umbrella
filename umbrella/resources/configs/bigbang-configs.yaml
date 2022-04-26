@@ -6,3 +6,31 @@ data:
   values.yaml: |-
     istio:
       enabled: true
+
+    jaeger:
+      enabled: false
+
+    kiali:
+      enabled: false
+    
+    clusterAuditor:
+      enabled: false
+
+    monitoring:
+      enabled: false
+    
+    logging:
+      enabled: false
+
+    eckoperator:
+      enabled: false
+    
+    fluentbit:
+      enabled: false
+
+    gatekeeper:
+      enabled: false
+
+    twistlock:
+      enabled: false
+  
