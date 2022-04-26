@@ -54,6 +54,8 @@ diff:
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
       - { "op": "remove", "path": "/spec/interval" }
+
+# Namespaces
   - apiVersion: v1
     kind: Namespace
     name: istio-operator
@@ -61,13 +63,26 @@ diff:
       - { "op": "remove", "path": "/metadata/labels" }
   - apiVersion: v1
     kind: Namespace
+    name: monitoring
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+  - apiVersion: v1
+    kind: Namespace
     name: istio-system
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+
+# Secrets
+  - apiVersion: v1
+    kind: Secret
+    name: private-registry
+    namespace: istio-system
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
   - apiVersion: v1
     kind: Secret
     name: private-registry
-    namespace: istio-system
+    namespace: monitoring
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
   - apiVersion: v1
