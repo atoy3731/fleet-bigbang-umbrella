@@ -5,5 +5,4 @@ metadata:
   namespace: bigbang
 data:
   values.yaml: |
-    istio:
-      enabled: true
+    domain: atoy.lol
