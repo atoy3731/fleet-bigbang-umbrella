@@ -1,7 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: bigbang-umbrella
+  name: bigbang-gitrepos
   namespace: fleet-local
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
@@ -14,4 +14,4 @@ spec:
         values:
         - harvester
   paths:
-  - ./umbrella
+  - gitrepos/
