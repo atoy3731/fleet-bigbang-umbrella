@@ -15,3 +15,42 @@ helm:
 
 dependsOn:
   - name: flux-helm-flux-manifests
+
+diff:
+  comparePatches:
+  - apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
+    name: istio-operator
+    namespace: bigbang
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+      - { "op": "remove", "path": "/spec/chart/spec/interval" }
+      - { "op": "remove", "path": "/spec/interval" }
+      - { "op": "remove", "path": "/spec/rollback/cleanupOnFail" }
+      - { "op": "remove", "path": "/spec/rollback/timeout" }
+      - { "op": "remove", "path": "/spec/test/enable" }
+  - apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
+    name: istio
+    namespace: bigbang
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+      - { "op": "remove", "path": "/spec/chart/spec/interval" }
+      - { "op": "remove", "path": "/spec/interval" }
+      - { "op": "remove", "path": "/spec/rollback/cleanupOnFail" }
+      - { "op": "remove", "path": "/spec/rollback/timeout" }
+      - { "op": "remove", "path": "/spec/test/enable" }
+  - apiVersion: helm.toolkit.fluxcd.io/v1beta1
+    kind: GitRepository
+    name: istio-controlplane
+    namespace: bigbang
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+      - { "op": "remove", "path": "/spec/interval" }
+  - apiVersion: helm.toolkit.fluxcd.io/v1beta1
+    kind: GitRepository
+    name: istio-operator
+    namespace: bigbang
+    operations:
+      - { "op": "remove", "path": "/metadata/labels" }
+      - { "op": "remove", "path": "/spec/interval" }
