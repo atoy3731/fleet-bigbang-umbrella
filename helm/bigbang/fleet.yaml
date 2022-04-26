@@ -5,13 +5,13 @@ helm:
   releaseName: bigbang
   valuesFrom:
   - configMapKeyRef:
-      name: istio-config
+      name: bigbang-configs
       namespace: bigbang
       key: values.yaml
-  # - secretKeyRef:
-  #     name: bigbang-secrets
-  #     namespace: bigbang
-  #     key: values.yaml
+  - secretKeyRef:
+      name: bigbang-secrets
+      namespace: bigbang
+      key: values.yaml
 
 dependsOn:
   - name: flux-helm-flux-manifests
