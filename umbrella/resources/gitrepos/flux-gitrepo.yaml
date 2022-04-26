@@ -12,5 +12,5 @@ spec:
       matchLabels:
         cluster: test
   paths:
-  - ./helm/flux/crds/
+  # - ./helm/flux/crds/
   - ./helm/flux/chart/
