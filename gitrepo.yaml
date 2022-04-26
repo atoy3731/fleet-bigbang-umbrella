@@ -1,31 +1,15 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: bigbang-prereqs
-  namespace: bigbang
-spec:
-  repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
-  clientSecretName: private-key
-  targets:
-  - name: local
-    clusterSelector:
-      matchLabels:
-        cluster: local
-  paths:
-  - ./umbrella/resources/configs
----
-apiVersion: fleet.cattle.io/v1alpha1
-kind: GitRepo
-metadata:
   name: bigbang-umbrella
-  namespace: bigbang
+  namespace: fleet-default
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
   clientSecretName: private-key
   targets:
-  - name: local
+  - name: test
     clusterSelector:
       matchLabels:
-        cluster: local
+        cluster: test
   paths:
-  - ./umbrella/resources/gitrepos
+  - ./umbrella
