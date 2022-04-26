@@ -51,8 +51,6 @@ diff:
       - { "op": "remove", "path": "/spec/rollback/cleanupOnFail" }
       - { "op": "remove", "path": "/spec/rollback/timeout" }
       - { "op": "remove", "path": "/spec/test/enable" }
-
-# GitRepositories
   - apiVersion: source.toolkit.fluxcd.io/v1beta1
     kind: GitRepository
     name: istio-controlplane
@@ -74,8 +72,6 @@ diff:
     operations:
       - { "op": "remove", "path": "/metadata/labels" }
       - { "op": "remove", "path": "/spec/interval" }
-
-# Namespaces
   - apiVersion: v1
     kind: Namespace
     name: istio-operator
