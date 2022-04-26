@@ -4,8 +4,7 @@ metadata:
   name: bigbang-prereqs
   namespace: fleet-default
 spec:
-  repo: ssh://git@git-ssh.atoy.lol/home/bigbang.git
-  clientSecretName: private-key
+  repo: https://github.com/atoy3731/fleet-bigbang-umbrella.git
   targets:
   - name: test
     clusterSelector:

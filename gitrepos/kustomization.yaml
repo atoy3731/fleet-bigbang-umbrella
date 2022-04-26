@@ -1,4 +1,4 @@
 resources:
-- bigbang-gitrepo.yaml
-- flux-gitrepo.yaml
-- prereq-gitrepo.yaml
+- 1-prereq-gitrepo.yaml
+- 2-flux-gitrepo.yaml
+- 3-bigbang-gitrepo.yaml
